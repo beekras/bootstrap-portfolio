@@ -3,103 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <link href="assets/css/style.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Bootstrap-Portfolio</title>
   </head>
 
   <body>
     <!-- nav bar -->
 
-<nav class="navbar navbar-expand-sm bg-body-tertiary">
-  <div class="container-fluid">
-    <h1>BLERTA KRASNIQI</h1>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#about">About Me</a>👩🏻
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#work">Work</a>👩🏻‍💻
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact" aria-expanded="false">
-            Contact me
-          </a> 📩
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container-fluid">
+        <h1>BLERTA KRASNIQI</h1>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About Me</a
+              >👩🏻
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>👩🏻‍💻
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" aria-expanded="false">
+                Contact me
+              </a>
+              📩
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- hero banner -->
-    <section class="hero-banner">
-      <div>
-        <img
-          id="blerta"
-          src="assets/images/me.jpg"
-          alt="image of Blerta Krasniqi"
-        />
-        <h2><span> 🌸 Aspiring Web Developer 🌸</span></h2>
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3 hero-banner">
+      <div class="container-fluid py-5 jumboCopy">
+        <h2 class="display-6"><span> 🌸Aspiring Web Developer 🌸</span></h2>
       </div>
-    </section>
+    </div>
 
-
-
+    <!-- main page -->
     <main class="page-wrapper">
-
-        <!-- about me -->
+      <!-- about me -->
       <section class="page-section" id="about">
         <h3>About Me</h3>
         <p>
-          Hello World 👋 My name Blerta Krasniqi and I am studying a 16-Week
-          Front-End Web Development course part-time. A little bit about my
-          background: I hold a BSc degree in Biochemistry, and I currently work
-          full-time as a laboratory technician in Liverpool. In my spare time I
-          enjoy expanding my knowledge and improving my coding skills, which has
-          been an exciting, fun, and creative journey. I have showcased my
+          Studying a 16-Week Front-End Web Development course part-time, with a
+          background in Biochemistry and laboratory technician work. Showcased
           knowledge of HTML and CSS within previous projects as explained below.
-          I wish to continuously learn and enhance my skills, and eventually
-          change career paths into a challenging yet rewarding web development
-          job.
+          Further aquired skills: HTML, UX and Advanced CSS, Bootstrap 5, JS,
+          Web, Third-Party and Server APIs, ES6 and Node.js, React
         </p>
       </section>
-      <!-- portfolio container -->
+
+      <!-- Work section -->
+  
       <section class="page-section" id="work">
         <h3>Work</h3>
-        <section id="gridContainer">
-          <div id="horiseon" class="gridArea">
-            <a
-              href="https://beekras.github.io/horiseon-challenge"
-              target="_blank"
-            >
-              <div class="heading">Horiseon Project</div></a
-            >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <img src="assets/images/horiseon.jpg"/>
+            <div class="card">
+              <div class="card-body">
+                <a href="https://beekras.github.io/horiseon-challenge" target="_blank">
+                  <h5 class="card-title">Horiseon Project</h5></a>
+              </div>
+            </div>
           </div>
-
-          <div id="LED" class="gridArea">
-            <a href="#" target="_blank"> <div class="heading">LED Wall</div></a>
+          <!-- end of card 1 -->
+          <div class = row> 
+          <div class="col-sm-3 mb-3 mb-sm-0">
+            <img  src="assets/images/LED.jpg">
+            <div class="card">
+              <div class="card-body">
+                <a href="" target="_blank">
+                  <h5 class="card-title">LED</h5></a>
+              </div>
+            </div> 
+            <!-- end of card 2 -->
           </div>
-
-          <div id="calculator" class="gridArea">
-            <a href="#" target="_blank">
-              <div class="heading">Calculator</div></a
-            >
+            <div class="col-sm-3 mb-3 mb-sm-0">
+            <img  src="assets/images/calculator.jpg">
+            <div class="card">
+              <div class="card-body">
+                <a href="" target="_blank">
+                  <h5 class="card-title">Calculator</h5></a>
+              </div>
+            </div>
+        </div>
+          <!-- end of card 3 -->
+      <div class = row> 
+          <div class="col-sm-3 mb-3 mb-sm-0">
+            <img src="assets/images/recipeimg.jpg">
+            <div class="card">
+              <div class="card-body">
+                <a href="" target="_blank">
+                  <h5 class="card-title">Recipe Builder</h5></a>
+              </div>
+            </div> 
           </div>
-
-          <div id="recipes" class="gridArea">
-            <a href="#" target="_blank">
-              <div class="heading">Recipe Builder</div></a
-            >
-          </div>
-
-          <div id="games" class="gridArea">
-            <a href="#" target="_blank">
-              <div class="heading">Game finder</div></a
-            >
-          </div>
-        </section>
-      </section>
+<!-- end of card 4 -->
+          <div class="col-sm-3 mb-3 mb-sm-0">
+            <img src="assets/images/gaming-website.jpg">
+            <div class="card">
+              <div class="card-body">
+                <a href="" target="_blank">
+                  <h5 class="card-title">Game Finder</h5></a>
+              </div>
+            </div> 
+        </div>
+      </div>
+       </section>
 
       <!-- contact -->
       <section class="page-section-contact" id="contact">
@@ -116,9 +135,7 @@
           <li>
             <a
               href="https://www.linkedin.com/in/blerta-k-6b25b0246/"
-              target="_blank"
-            >
-              LinkedIn
+              target="_blank"> LinkedIn
             </a>
           </li>
         </ul>

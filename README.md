@@ -20,5 +20,7 @@ I recreated my original portfolio using bootstrap, minimising media queries and 
 
 ## Deployed Website
 
+https://beekras.github.io/bootstrap-portfolio/
+
 ## License
 MIT License

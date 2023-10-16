@@ -77,6 +77,7 @@ h2 {
     color: rgb(235, 54, 181);
    display:flex;
    justify-content: center;
+   margin-top: 50px;
 
 }
 
@@ -117,7 +118,7 @@ p {
 #work {
     display: flex;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 20px;
 
 }
 
@@ -125,62 +126,91 @@ p {
 
   align-self: center;}
 
-img {
+
+.horiseonImg {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: thin;
+        border-color: black;
+
+}
+
+.smallerImg {
 width: 100%;
-height: 15vw;
+height: 10vw;
 object-fit: cover;
+margin-top: 20px;
+border-style: solid;
+border-width: thin;
+border-color: black;
 
 }
 
 img:hover {
  opacity: 0.5;
+
 }
 
+.row {
+   justify-content: center;
+}
 
-
-.heading {
+.card-title {
     color: black;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
-    position: absolute;
-    background-color: var(--pink);
-    border-style: solid;
-    border-color: black
+    text-align: center;
 }
 
+.card {
+    background-color: var(--pink);
+    border-style: solid;
+    border-color: black;
+    height: 50px;
+}
+.card-body a {
+    text-decoration: none;
+}
+
+
+.card-body a:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+        color: white;
+
+    
+}
 .page-section-contact {
 
     display: flex;
-    margin-left: 50px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 #contact {
-
     display: flex;
     flex-direction: row;
 }
 
-.page-section-contact ul {
-
-    list-style-type: none;
-    display: inline-block;
-    margin-top: 50px;
-    margin-bottom: 0;
-
+.btn {
+    background-color: pink;
+    border: none;
+    justify-content: center;
+   margin-left: 50px;
+   margin-top: 20px
 }
 
-.page-section-contact ul li {
+.btn:hover {
 
-    display: inline-block;
-    padding-left: 50px;
+    background-color: lavender;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.page-section-contact a {
-    display: inline-block;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 5px;
-    font-weight: bold;
-    color: var(--pink);
+.contact-links {
+margin-left: 400px;
+
 }
 
